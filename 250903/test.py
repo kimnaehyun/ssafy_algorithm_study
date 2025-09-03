@@ -1,8 +1,8 @@
 import heapq
 n = int(input())
-arr = [int(input()) for _ in range(n)]
+arr = []
 
-heapq.heapify(arr) # 리스트를 최소 힙으로 변환
+for _ in range(n): heapq.heappush(arr, int(input()))
 
 all_v = 0
 
